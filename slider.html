@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css"
+    />
+
+    <!-- Demo styles -->
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+
+      body {
+        background: #f03737;
+        font-family:
+          Helvetica Neue,
+          Helvetica,
+          Arial,
+          sans-serif;
+        font-size: 14px;
+        color: #fff;
+        margin: 0;
+        padding: 0;
+      }
+
+      .swiper {
+        width: 100%;
+        height: 70%;
+      }
+
+      .swiper-slide {
+        width: 10%;
+        height: 70%;
+        text-align: center;
+        font-size: 18px;
+        background: #665b5b;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width:100%; 
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .mySwiper {
+        margin-left: auto;
+        margin-right: auto;
+        
+      }
+
+      .mySwiper .swiper-button-prev {
+        left: 1%;
+      }
+
+      .mySwiper .swiper-button-next {
+        right: 2%;
+      }
+
+      .mySwiper .swiper-pagination {
+        bottom: 100px;
+        position: absolute;
+      }
+  
+    </style>
+  </head>
+
+  <body>
+    <h1>Gallery Property</h1>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="asset/property-1.jpg" alt="Property 1" /></div>
+        <div class="swiper-slide"><img src="asset/property-2.jpg" alt="Property 2" /></div>
+        <div class="swiper-slide"><img src="asset/property-3.jpg" alt="Property 3" /></div>
+        <div class="swiper-slide"><img src="asset/property-4.jpg" alt="Property 4" /></div>
+        <div class="swiper-slide"><img src="asset/property-5.jpg" alt="Property 5" /></div>
+        <div class="swiper-slide"><img src="asset/property-6.jpg" alt="Property 6" /></div>
+        <div class="swiper-slide"><img src="asset/property-7.jpg" alt="Property 7" /></div>
+        <div class="swiper-slide"><img src="asset/property-8.jpg" alt="Property 8" /></div>
+        <div class="swiper-slide"><img src="asset/property-9.jpg" alt="Property 9" /></div>
+        
+      </div>
+         <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper('.mySwiper', {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        // Connect the arrows to Swiper so users can move between property photos.
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    </script>
+  </body>
+</html>
