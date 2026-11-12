@@ -275,6 +275,15 @@ line-height: 1.1;
     align-items: center;
    justify-content: center;
 }
+.kontak-p3 .kontak-p1{
+    color: #647b8c;
+}
+.kontak-h1{
+   color:#194668 ;
+   font-weight: 700;
+   font-size: 28px;
+   justify-self: center;
+}
 .all-container {
     width: 89%;
     display: grid;
@@ -377,4 +386,5 @@ a{
 }
 .finale{
     justify-self: center;
+    margin-top: 20px;
 }
